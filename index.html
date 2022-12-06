@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/script.js" defer></script>
+  
+  <title>Library</title>
+</head>
+<body>
+
+<header>  <h1>Library Book</h1> </header>
+<!-- END OF header -->
+
+<main>
+
+  <form action="#" class="bookForm">
+    <h2>Add a Book</h2>
+    
+    <label for="author">Book Author</label>
+    <input type="text" name="author" id="author" required>
+    
+    <label for="title">Book Title</label>
+    <input type="text" name="title" id="title" required>
+    
+    <label for="pages">Book Pages</label>
+    <input type="number" name="pages" id="pages" min="0" required>
+    
+    <label for="comment">Comment</label>
+    <textarea name="comment" id="comment"></textarea>
+    
+    <div class="checkBoxContainer">
+      <label for="isRead">I have read the book</label>
+      <input type="checkbox" name="isRead" id="isRead">
+    </div>
+
+    <div class="buttons">
+
+      <button class="green-button" type="submit">✓</button>
+      <button class="red-button" type="reset">X</button>
+
+    </div>
+
+  </form>
+  <!-- END OF Form  -->
+  
+  <section class="bookContainer">
+    <!-- This is the div where the books that the user entered are going to added. From the javascript file -->
+  </section>
+
+</main>
+
+
+</body>
+</html>
